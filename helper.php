@@ -1,0 +1,1 @@
+<?php/** * Helper class for Simple Gallery! module *  */class modSimpleGalleryHelper{          public static function getGallery($params)    {        return;    }}

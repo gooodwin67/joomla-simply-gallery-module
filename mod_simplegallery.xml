@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1.0" client="site" method="upgrade">
+    <name>Simple Gallery</name>
+    <author>Andrey Aleynik</author>
+    <version>1.0.0</version>
+    <description>A simple gallery module.</description>
+    <files>
+        <filename>mod_simplegallery.xml</filename>
+        <filename module="mod_simplegallery">mod_simplegallery.php</filename>
+        <filename>index.html</filename>
+        <filename>helper.php</filename>
+        <filename>tmpl/default.php</filename>
+        <filename>tmpl/index.html</filename>
+    </files>
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                
+                <field name="url" 
+                    type="text" 
+                    default="" 
+                    required="true"
+                    label="Папка" 
+                    description="Название папки в images" />
+                <field name="url-thumb" 
+                    type="text" 
+                    default="" 
+                    label="Папка с миниатюрами" 
+                    description="Название папки в images. Имена файлов должны совпадать с именами файлов полных изображений" />
+                <field name="columns" 
+                    type="list"
+                    required="true"
+                    label="Количество колонок" 
+                    description="От 1 до 6">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                </field>
+                <field 
+                    name="modal" 
+                    type="checkbox" 
+                    label="Галерея в модальном окне" 
+                    description="Если галерею надо выводить в модальном окне. Для вызова добавте к кнопке/ссылке класс, который укажите в поле ниже. Класс должен быть уникальным, если на странице будет несколько галерей. Позицию модуля указыайте любую, которая есть на сайте." 
+                    value="1" />
+                <field name="class" 
+                    type="text" 
+                    default="" 
+                    label="Класс для ссылки" 
+                    description="Укажите класс, который вы добавите к ссылке для вызова галереи (в одно слово, без знаков)" />
+                
+            </fieldset>
+        </fields>
+    </config>
+</extension>
