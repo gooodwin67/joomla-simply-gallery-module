@@ -23,3 +23,6 @@ Andrey Aleynik | lcfc.ru
 ## RUS
 Simply Gallery Module это модуль для CMS Joomla, которые выводит галерею изображений из любой папки вашего сайта.
 Используется Фреймворк UIKIT
+
+
+![msg](https://user-images.githubusercontent.com/30752521/130578429-6d64620b-2044-43e6-9877-0ef42ba01275.jpg)
